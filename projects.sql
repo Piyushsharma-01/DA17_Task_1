@@ -1,0 +1,52 @@
+CREATE TABLE projects(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  department_id VARCHAR NOT NULL,
+  start_date DATE NOT NULL,
+  end_date DATE NOT NULL
+)
+
+INSERT INTO projects (id, name, department_id, start_date, end_date)
+VALUES
+(1, 'AI Research', 'IT001', '2023-01-15', '2024-06-30'),
+(2, 'E-commerce Platform Upgrade', 'IT002', '2023-05-10', '2024-08-15'),
+(3, 'Marketing Campaign 2024', 'MKT001', '2023-09-01', '2024-12-31'),
+(4, 'HR Portal Development', 'HR001', '2023-03-20', '2024-05-30'),
+(5, 'Cybersecurity Enhancement', 'IT003', '2023-06-01', '2024-09-30'),
+(6, 'Finance Analytics Dashboard', 'FIN001', '2023-07-10', '2024-11-20'),
+(7, 'Supply Chain Optimization', 'OPS001', '2023-08-15', '2024-10-10'),
+(8, 'Customer Relationship Management', 'CRM001', '2023-02-05', '2024-07-25'),
+(9, 'Cloud Migration', 'IT004', '2023-04-10', '2024-09-15'),
+(10, 'Employee Training Program', 'HR002', '2023-01-10', '2024-06-15'),
+(11, 'Social Media Expansion', 'MKT002', '2023-05-05', '2024-08-20'),
+(12, 'Data Science Implementation', 'IT005', '2023-03-25', '2024-10-30'),
+(13, 'Retail POS System', 'OPS002', '2023-06-15', '2024-12-01'),
+(14, 'Legal Compliance Update', 'LEG001', '2023-02-15', '2024-07-10'),
+(15, 'Customer Feedback Analysis', 'CRM002', '2023-08-01', '2024-09-25'),
+(16, 'New Product Launch', 'MKT003', '2023-07-20', '2024-11-30'),
+(17, 'Automated Payroll System', 'FIN002', '2023-04-01', '2024-08-05'),
+(18, 'AI Chatbot Development', 'IT006', '2023-06-20', '2024-10-20'),
+(19, 'Risk Management Assessment', 'FIN003', '2023-05-15', '2024-09-30'),
+(20, 'Database Optimization', 'IT007', '2023-09-05', '2024-12-10'),
+(21, 'Performance Review System', 'HR003', '2023-01-20', '2024-05-20'),
+(22, 'Green Energy Initiative', 'OPS003', '2023-03-10', '2024-07-15'),
+(23, 'Vendor Management Platform', 'OPS004', '2023-02-20', '2024-06-30'),
+(24, 'Retail Store Expansion', 'OPS005', '2023-08-05', '2024-11-05'),
+(25, 'Legal Document Automation', 'LEG002', '2023-04-25', '2024-09-05'),
+(26, 'Cyber Risk Assessment', 'IT008', '2023-05-30', '2024-10-15'),
+(27, 'Inventory Management Upgrade', 'OPS006', '2023-07-01', '2024-12-20'),
+(28, 'Employee Wellbeing Initiative', 'HR004', '2023-06-10', '2024-09-10'),
+(29, 'Financial Fraud Detection', 'FIN004', '2023-09-15', '2024-12-15'),
+(30, 'Blockchain Integration', 'IT009', '2023-03-05', '2024-07-25'),
+(31, 'Customer Loyalty Program', 'CRM003', '2023-07-10', '2024-11-10'),
+(32, 'AI-Powered Recommendation System', 'IT010', '2023-05-15', '2024-10-10'),
+(33, 'Corporate Rebranding', 'MKT004', '2023-04-20', '2024-08-25'),
+(34, 'Automated Invoice Processing', 'FIN005', '2023-06-05', '2024-09-30'),
+(35, 'Office Relocation Planning', 'OPS007', '2023-01-15', '2024-05-15'),
+(36, 'Sales Performance Analysis', 'MKT005', '2023-02-25', '2024-07-20'),
+(37, 'Smart Warehouse Implementation', 'OPS008', '2023-08-15', '2024-12-31'),
+(38, 'HR Digitalization', 'HR005', '2023-09-05', '2024-11-30'),
+(39, 'Data Privacy Compliance', 'IT011', '2023-07-25', '2024-10-05'),
+(40, 'E-learning Platform', 'HR006', '2023-03-30', '2024-08-15')
+
+select * from projects

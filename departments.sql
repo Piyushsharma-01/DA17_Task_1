@@ -1,0 +1,52 @@
+CREATE TABLE departments(
+ id SERIAL PRIMARY KEY,
+ name VARCHAR(50) NOT NULL,
+ manager_id INT NOT NULL,
+ budget DECIMAL(12,2) NOT NULL,
+ location VARCHAR(100) NOT NULL
+)
+
+INSERT INTO departments (id, name, manager_id, budget, location)
+VALUES
+(1, 'HR', 1, 75000.00, 'Mumbai'),
+(2, 'Finance', 2, 95000.00, 'Delhi'),
+(3, 'Engineering', 3, 120000.00, 'Bangalore'),
+(4, 'Marketing', 4, 85000.00, 'Hyderabad'),
+(5, 'Sales', 5, 90000.00, 'Chennai'),
+(6, 'Support', 6, 80000.00, 'Pune'),
+(7, 'IT', 7, 110000.00, 'Ahmedabad'),
+(8, 'Operations', 8, 105000.00, 'Kolkata'),
+(9, 'Legal', 9, 98000.00, 'Jaipur'),
+(10, 'Research', 10, 115000.00, 'Lucknow'),
+(11, 'Procurement', 11, 87000.00, 'Surat'),
+(12, 'Logistics', 12, 93000.00, 'Indore'),
+(13, 'Public Relations', 13, 89000.00, 'Nagpur'),
+(14, 'Customer Success', 14, 91000.00, 'Patna'),
+(15, 'Quality Assurance', 15, 97000.00, 'Bhopal'),
+(16, 'Data Science', 16, 130000.00, 'Chandigarh'),
+(17, 'Security', 17, 108000.00, 'Bhubaneswar'),
+(18, 'Compliance', 18, 94000.00, 'Visakhapatnam'),
+(19, 'Administration', 19, 87000.00, 'Coimbatore'),
+(20, 'Facilities', 20, 81000.00, 'Mysore'),
+(21, 'Healthcare', 21, 123000.00, 'Guwahati'),
+(22, 'Human Resources', 22, 88000.00, 'Raipur'),
+(23, 'Legal Affairs', 23, 92000.00, 'Ranchi'),
+(24, 'Software Development', 24, 135000.00, 'Dehradun'),
+(25, 'AI Research', 25, 140000.00, 'Shimla'),
+(26, 'Data Engineering', 26, 125000.00, 'Panaji'),
+(27, 'Cybersecurity', 27, 118000.00, 'Agra'),
+(28, 'E-commerce', 28, 101000.00, 'Varanasi'),
+(29, 'Retail', 29, 97000.00, 'Madurai'),
+(30, 'Banking', 30, 111000.00, 'Amritsar'),
+(31, 'Insurance', 31, 104000.00, 'Udaipur'),
+(32, 'Product Management', 32, 99000.00, 'Tirupati'),
+(33, 'Creative Design', 33, 86000.00, 'Jodhpur'),
+(34, 'Media & Communications', 34, 95000.00, 'Vadodara'),
+(35, 'Gaming', 35, 97000.00, 'Vijayawada'),
+(36, 'Hospitality', 36, 88000.00, 'Nashik'),
+(37, 'Real Estate', 37, 92000.00, 'Meerut'),
+(38, 'Telecommunications', 38, 96000.00, 'Gwalior'),
+(39, 'Education', 39, 89000.00, 'Aurangabad'),
+(40, 'Government Affairs', 40, 93000.00, 'Kochi')
+
+select * from departments
